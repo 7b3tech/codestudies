@@ -1,0 +1,25 @@
+version: '3.1'
+services:
+  node-app:
+    container_name: node-nestjs 
+    build: .
+    ports:
+      - "3000:3000" 
+    volumes:
+      - ./:/node/app
+      - /node/app/node_modules
+
+  # db:
+  #   image: postgres:14-alpine
+  #   restart: always
+  #   environment:
+  #     POSTGRES_PASSWORD: docker
+  #     POSTGRES_USER:  postgres
+  #     POSTGRES_DB:  blog
+  #   ports:
+  #     - "5432:5432"
+
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   ports: - 8080:8080

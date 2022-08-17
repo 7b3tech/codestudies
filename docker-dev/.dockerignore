@@ -1,0 +1,5 @@
+.git
+.dockerignore
+node_mosules/
+Dockerfile
+docker-compose.yaml

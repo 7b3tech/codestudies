@@ -1,0 +1,19 @@
+{ 
+   "type": "postgres", 
+   "host": "localhost", 
+   "port": 5432, 
+   "username": "postgres", 
+   "password": "docker", 
+   "database": "calunga", 
+   "synchronize": true, 
+   "logging": false, 
+   "entities": [ 
+      __dirname + "/typeorm/entity/**/*.ts" ], 
+   "migrations": [ "src/typeorm/migration/**/*.ts" 
+   ], 
+   "subscribers": [ "src/typeorm/subscriber/**/*.ts" 
+   ], 
+   "cli": { 
+      "entitiesDir":"src/typeorm/entity", "migrationsDir":"src/typeorm/migration", "subscribersDir":"src/subscriber
+   }    
+ }

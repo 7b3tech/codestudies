@@ -1,0 +1,37 @@
+
+GET http://localhost:3000/routes
+Content-Type: application/json
+
+
+
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+	
+{
+"title":"my route",
+"startPosition":{ "lat":0, "lng":1},
+"endPosition":{"lat":2,"lng":3} 
+	
+}
+#GET http://localhost:3000/routes
+
+
+
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+	
+  "title": "my route",
+  "startPosition": { "lat": 0, "lng":1 },
+  "endPosition": { "lat":2, "lng":3 } 
+	
+}
+
+
+
+POST http://httpbin.org/post
+Content-Type: application/json
+
+{ "name": "Test"}

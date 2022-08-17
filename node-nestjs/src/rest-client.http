@@ -1,0 +1,15 @@
+GET http://localhost:3000/cats
+Content-Type: application/json
+
+
+GET http://localhost:3000/cats/1
+Content-Type: application/json
+
+POST http://localhost:3000/cats
+Content-Type: application/json
+
+{
+"name": "Tomì",
+"age": "1",
+"breed":"BLue"
+}
